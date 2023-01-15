@@ -57,7 +57,7 @@ void Date::show() const
 
 bool Date::is_date_valid(int day, int month, int year )
 {
-    if(1000 <= year <= 2023)
+    if(1970 <= year <= 2023)
        {
          if((month==1 || month==3 || month==5|| month==7|| month==8||month==10||month==12) && day>0 && day<=31)
             return TRUE;
